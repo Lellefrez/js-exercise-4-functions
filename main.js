@@ -31,15 +31,6 @@ else if (input1.length > input2.length) {
 (es. Ciao -> oaiC). Quindi, chiedere all’utente quale parola vuole girare.
 BONUS: se la parola scelta dall’utente è un palindromo, avvisalo
 
-3. Scrivi una funzione che fonda due array (aventi lo stesso numero di elementi) prendendo alternativamente gli elementi da uno e dall’altro
-es. [a,b,c], [1,2,3] → [a,1,b,2,c,3]
-
-4. Crea un array di 10 oggetti che rappresentano una mela, indicando per ognuna varietà, peso e diametro.
-Calcola quanto pesano tutte le mele.
-BONUS Dividi in due array separati le mele con diametro maggiore di 10cm. Infine stampa separatamente quanto pesano i due gruppi di mele.
-*/
-
-
 function giraParola(x) {
   let parolaGirata = "";
   for (let i = x.length - 1; i >= 0; i--) {
@@ -54,4 +45,37 @@ console.log(risultato);
 if (risultato === inputUtente) {
   alert("è un palindromo");
 }
+*/
+
+/*
+3. Scrivi una funzione che fonda due array (aventi lo stesso numero di elementi)
+ prendendo alternativamente gli elementi da uno e dall’altro
+es. [a,b,c], [1,2,3] → [a,1,b,2,c,3]
+
+function fondArray(lettera, numero) {
+  let arrayFuso = [];
+  for (i = 0; i < lettera.length; i++) {
+    arrayFuso.push(lettera[i]);
+    arrayFuso.push(numero[i]);
+  }
+  return arrayFuso;
+}
+let arrayLettere = ["a", "b", "c", "d"];
+
+let arrayNumeri = [1, 2, 3, 4];
+
+
+console.log(fondArray(arrayLettere, arrayNumeri));
+
+
+*/
+/*
+4. Crea un array di 10 oggetti che rappresentano una mela, 
+indicando per ognuna varietà, peso e diametro.
+Calcola quanto pesano tutte le mele.
+BONUS Dividi in due array separati le mele con 
+diametro maggiore di 10cm. Infine stampa separatamente quanto pesano 
+i due gruppi di mele.
+*/
+
 
